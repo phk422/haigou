@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/* 广告 */
+#header .ad, .nav, .logo-search,#header .big-img {
+ overflow: hidden;
+ min-width: 1100px;
+}
+
+#header .ad img {
+  /* 图片居中显示 */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* 导航栏 */
+#header .nav {
+  height: 30px;
+  line-height: 30px;
+  background-color: #000;
+}
+
+#header .nav .nav-left {
+  float: left;
+}
+
+#header .nav a {
+  color: #999;
+}
+
+#header .nav .nav-left a {
+  margin-left: 20px;
+}
+
+#header .nav a:hover {
+  color: #ffffff;
+}
+
+#header .nav .app {
+  position: relative;
+}
+
+#header .nav .app:hover .qr-code {
+  display: inline-block;
+}
+
+#header .nav .qr-code i {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border: 8px solid #fff;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(-45deg);
+}
+
+#header .nav .qr-code {
+  position: absolute;
+  display: none;
+  top: 22px;
+  left: 50%;
+  transform: translate(-50%);
+
+  background-color: #fff;
+  width: 116px;
+  padding: 2px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+#header .nav .qr-code img {
+  width: 116px;
+  height: 116px;
+}
+
+#header .nav .qr-code span {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#header .nav .nav-right {
+  position: relative;
+  float: right;
+}
+
+#header .nav .nav-right a {
+  float: left;
+  height: 30px;
+  padding: 0 12px;
+}
+
+#header .nav .nav-right .drop-down:hover {
+  background-color: #fff;
+  color: #ff1e32;
+}
+
+/* 箭头 */
+#header .nav-right .drop-down i {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border: 4px solid #999;
+  /* 设置透明颜色 */
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  /* 设置动画 */
+  transition: transform 200ms linear;
+  transform-origin: center 2px;
+} 
+
+#header .nav .nav-right .drop-down:hover i {
+  border-top-color: #ff1e32;
+  /* 顺时针旋转180deg */
+  transform: rotate(180deg);
+}
+
+
+.drop-list {
+  position: absolute;
+  top: 30px;
+  left: 144px;
+  
+  /* display: none; */
+  /* z-index: 999; */
+  width: 100px;
+  background-color: #f00;
+}
+
+
+/* #header .nav .nav-right .drop-down:hover+.drop-list,
+#header .nav .nav-right .drop-list:hover {
+  display: inline;
+} */
+
+#header .nav-right .drop-list a:hover {
+  color: #ff1e32;
+}
+
+/* logo-search */
+#header .logo-search {
+  position: relative;
+  /* background-color: orange; */
+  height: 100px;
+}
+
+#header .logo-search-box {
+  background-color: #fff;
+}
+
+#header .logo-search .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 330px;
+  background: url("../img/logo_new.png") no-repeat left center;
+}
+
+#header .logo-search .search {
+  position: absolute;
+  left: 120px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  float: right;
+  width: 420px;
+  height: 30px;
+  border: 2px solid #ff1e32;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-radius: 40px;
+  padding: 4px 20px 4px 25px;
+}
+
+#header .logo-search .search i {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  width: 14px;
+  height: 14px;
+  background: url("../img/kl-sprite-01.png") no-repeat;
+  background-position: -466px -667px;
+}
+
+#header .logo-search .search input {
+  width: 380px;
+  height: 30px;
+}
+
+#header .logo-search .search input::placeholder {
+  font-style: italic;
+}
+
+#header .logo-search .search span {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  height: 40px;
+  width: 62px;
+  cursor: pointer;
+  background: url("../img/icon-search.png") 
+  #ff1e32 no-repeat center center;
+  border-radius: 40px;
+}
+
+#header .logo-search .shop-car {
+  position: absolute;
+  /* right: 20%; */
+  right: 80px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  height: 38px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #000;
+  width: 90px;
+  padding: 0 0 0 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #ff1e32;
+  border-radius: 40px;
+}
+
+#header .logo-search .shop-car:hover {
+  background-color: #fff4f5;
+  color: #ff1e32;
+}
+
+#header .logo-search .shop-car i {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto 0;
+  left: 18px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/shopcart-icon.png");
+}
+
+/* menu */
+#header .menu {
+  background-color: #fff;
+}
+
+#header .menu ul {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#header .menu ul li {
+  position: relative;
+  left: 200px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+#header .menu ul li a {
+  display: inline-block;
+}
+
+#header .menu ul li:hover a, .hot {
+  color: #ff1e32;
+}
+
+
+#header .big-img img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+

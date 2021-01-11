@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+  font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,
+  \5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+  background-color: #f0f0f0;
+  
+  color: #999;
+}
+
+/* 居中显示 */
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* 肯会存在ie浏览器的兼容问题,见如下即可解决 */
+.clear-fix::after {
+  /* 清除浮动 */
+  clear: both;  
+  /* 为元素必须要写内容 */
+  content: "";
+  /* 为元素默认是行内级别元素 */
+  display: block;
+    
+  height: 0;
+  visibility: hidden;
+}
+.clear-fix {
+  /* 兼容IE6和7 */
+  *zoom: 1;
+}
