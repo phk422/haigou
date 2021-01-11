@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 广告 */
-#header .ad, .nav, .logo-search,#header .big-img {
+#header .ad {
  overflow: hidden;
  min-width: 1100px;
 }
@@ -64,6 +64,7 @@
   top: 22px;
   left: 50%;
   transform: translate(-50%);
+  z-index: 9;
 
   background-color: #fff;
   width: 116px;
@@ -86,12 +87,19 @@
 }
 
 #header .nav .nav-right {
-  position: relative;
   float: right;
 }
 
-#header .nav .nav-right a {
-  float: left;
+#header .nav .nav-right ul {
+  /* float: left; */
+}
+
+#header .nav .nav-right ul li {
+  display: inline-block;
+}
+
+#header .nav .nav-right ul a {
+  display: inline-block;
   height: 30px;
   padding: 0 12px;
 }
