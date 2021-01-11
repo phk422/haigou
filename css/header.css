@@ -147,7 +147,7 @@
   left: 0;  
   display: none;
   z-index: 9;
-  width: 95px;
+  width: 100px;
   background-color: #fff;
   border: 1px solid #eaeaea;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
@@ -160,6 +160,14 @@
 #header .nav-right .drop-list a {
   display: block;
   margin: 0 5px;
+}
+
+#header .nav-right .drop-list hr {
+  border: none;
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 0 6px;
+
 }
 
 /* logo-search */
