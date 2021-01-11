@@ -100,7 +100,7 @@
   padding: 0 12px;
 }
 
-#header .nav-right ul li:hover a,
+#header .nav-right ul li:hover .drop-down,
 #header .nav-right ul li:hover i {
   background-color: #fff;
   /* color: #ff1e32; */
@@ -303,5 +303,3 @@
   left: 50%;
   transform: translate(-50%);
 }
-
-
