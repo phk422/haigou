@@ -9,6 +9,10 @@
 #header .ad img {
   /* 图片居中显示 */
   position: relative;
+  /* 这个百分比是相对于父元素的宽度 
+    文档：refer to the width of the containing block
+    containing block 通常指的是父元素（包含块）
+  */
   left: 50%;
   transform: translate(-50%);
 }
@@ -167,7 +171,6 @@
   height: 1px;
   background-color: #eaeaea;
   margin: 0 6px;
-
 }
 
 /* logo-search */
@@ -283,31 +286,107 @@
   background-color: #fff;
 }
 
-#header .menu ul {
+#header .menu .category {
+  position: relative;
+  float: left;
+  width: 164px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #fff;
+  background: linear-gradient(90deg, #f00, #ff3264);
+}
+
+#header .menu .categories {
+  position: absolute;
+  z-index: 1;
+  width: 164px;
+}
+
+#header .menu .categories ul li {
+  padding: 0 3px 0 1px;
+  height: 38px;
+  background: linear-gradient(90deg, #f00, #ff3264);
+  border-top: 1px solid #ff5160;
+}
+
+#header .menu .categories ul a {
+  position: relative;
+  display: block;
+  /* width: 160px; */
+  color: #fff;
+  text-align: center;
+}
+
+#header .menu .categories ul a:hover {
+  background-color: #fff;
+  color: #ff1e32;
+}
+
+#header .menu .categories .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-category-mrcz.png") no-repeat center center;
+  /* background: url("../img/icon-category-mrcz-active.png") no-repeat; */
+}
+
+#header .categories ul a:hover .icon {
+  background: url("../img/icon-category-mrcz-active.png") no-repeat;
+}
+
+#header .menu .categories .icon + span {
+  margin-left: 20px;
+}
+
+#header .menu .category .lineicon {
+  margin: 0 15px 0 20px;
+}
+
+#header .menu .list {
+  float: left;
   height: 40px;
   line-height: 40px;
   font-size: 15px;
   font-weight: bold;
+  /* margin-left: 100px; */
 }
 
-#header .menu ul li {
-  position: relative;
-  left: 200px;
+#header .menu .list li {
+  /* float: left; */
   display: inline-block;
-  margin-right: 25px;
+  margin: 0 5px;
 }
 
-#header .menu ul li a {
+#header .menu .list li a {
   display: inline-block;
+  padding: 0 20px;
 }
 
-#header .menu ul li:hover a, .hot {
+#header .menu .list li:hover a, .hot {
   color: #ff1e32;
 }
 
+#header .menu + hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
 
-#header .big-img img {
+#header .swiper a {
+  display: block;
+}
+
+#header .swiper img {
   position: relative;
+  /* 先移动父元素的一半，再移动自己的一半即可让图片居中显示 */
   left: 50%;
+  /* 行内级元素的范围比行内元素范围更大 */
+  /* transform对行内元素无效 */
+  /* 这里的img是行内替换元素 */
   transform: translate(-50%);
 }

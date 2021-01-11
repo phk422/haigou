@@ -30,3 +30,21 @@ body {
   /* 兼容IE6和7 */
   *zoom: 1;
 }
+
+/* 菜单符号，三根线 */
+.lineicon {
+  display: inline-block;
+  height: 13px;
+}
+
+.lineicon i {
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 4px;
+}
+
+.lineicon i.firsticon {
+  margin-top: 0;
+}
