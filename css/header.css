@@ -381,7 +381,7 @@
   position: relative;
 }
 
-#header .swiper a {
+#header .swiper > a {
   display: block;
 }
 
@@ -393,6 +393,7 @@
   /* transform对行内元素无效 */
   /* 这里的img是行内替换元素 */
   transform: translate(-50%);
+  z-index: -9;
 }
 
 /* 毛玻璃效果 */
@@ -410,11 +411,60 @@
 }
 
 #header .swiper .service .blur {
-  height: 39px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   /* 设置滤镜blur是一个函数，这个必须要有背景色和背景才会生效 */
   /* background-color: #ff0; */
   /* 截取图片的底部 */
   /* background: url("../img/banner.jpg") center bottom; */
   background-color: rgba(0, 0, 0, 0.4);
+  /* 高斯模糊 */
   filter: blur(8px);
+  z-index: -1;
+}
+
+#header .swiper .service ul {
+  /* float: left; */
+  line-height: 39px;
+  
+}
+
+#header .swiper .service ul li {
+  float: left;
+  margin-right: 50px;
+}
+
+#header .swiper .service ul li a {
+  color: #fff;
+}
+
+#header .swiper .service ul li a:hover, 
+#header .swiper .new-person a:hover {
+  text-decoration: underline;
+}
+
+#header .swiper  li .circle-icon {
+  margin-right: 5px;
+}
+
+#header .swiper .new-person {
+  float: right;
+  line-height: 39px;
+}
+
+#header .swiper .new-person a{
+  /* float: right; */
+  color: #fff;
+}
+
+#header .swiper .phone {
+  display: inline-block;
+  background: url("../img/icon-aside-right-phone.png") no-repeat center center;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
 }

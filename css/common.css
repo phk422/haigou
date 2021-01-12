@@ -14,6 +14,9 @@ body {
   margin: 0 auto;
 }
 
+/* 清除浮动：
+      目的是让其有高度        
+*/
 /* 肯会存在ie浏览器的兼容问题,见如下即可解决 */
 .clear-fix::after {
   /* 清除浮动 */
@@ -47,4 +50,17 @@ body {
 
 .lineicon i.firsticon {
   margin-top: 0;
+}
+
+/* 圆圈图标 */
+.circle-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15x;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30% 0;
+  border: 3px solid #fff;
 }
