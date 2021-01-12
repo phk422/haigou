@@ -377,6 +377,10 @@
   background-color: #ccc;
 }
 
+#header .swiper {
+  position: relative;
+}
+
 #header .swiper a {
   display: block;
 }
@@ -389,4 +393,28 @@
   /* transform对行内元素无效 */
   /* 这里的img是行内替换元素 */
   transform: translate(-50%);
+}
+
+/* 毛玻璃效果 */
+#header .swiper .service {
+  /* 
+    设置定位后块级元素的宽度会消失，可以将width设置为100%
+    也可以将left和right设置为0
+  */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 39px;
+  /* 隐藏毛玻璃超出的扩散效果 */
+  overflow: hidden;
+}
+
+#header .swiper .service .blur {
+  height: 39px;
+  /* 设置滤镜blur是一个函数，这个必须要有背景色和背景才会生效 */
+  /* background-color: #ff0; */
+  /* 截取图片的底部 */
+  /* background: url("../img/banner.jpg") center bottom; */
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(8px);
 }
