@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+
+#header {
+  margin-bottom: 20px;
+}
+
 /* 广告 */
 #header .ad {
  overflow: hidden;
@@ -381,6 +386,7 @@
 
 #header .swiper {
   position: relative;
+  overflow: hidden;
 }
 
 #header .swiper > a {
