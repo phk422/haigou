@@ -170,3 +170,41 @@
 #main .product .part2 .dots i.active {
   background-color: #333;
 }
+
+#main .product .products li {
+  height: 120px;
+  border-bottom: 1px solid #e9e9e9;
+
+}
+
+#main .products li > a {
+  float: left;
+  margin-top: 27px;
+}
+
+
+#main .products li .item {
+  float: left;
+  width: 120px;
+  margin-top: 27px;
+}
+
+#main .products li .item a:hover {
+  text-decoration: underline;
+}
+
+#main .products li .price {
+  margin-top:6px;
+}
+
+#main .products .price strong {
+  color: #f00;
+  font-size: 20px;
+}
+
+#main .products .price strong + span {
+  margin-left: 5px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
