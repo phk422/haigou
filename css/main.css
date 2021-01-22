@@ -224,6 +224,7 @@
 }
 
 #main .hot-sale ul li {
+  position: relative;
   float: left;
   width: 219px;
   height: 167px;
@@ -234,3 +235,16 @@
   margin-left: -1px;
 }
 
+#main .hot-sale ul a {
+  display: block;
+}
+
+#main .hot-sale ul a:hover + i{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACs0lEQVQ4T31UQUgUYRh9b3ZXSElIcmeTqIhox7QIKsUIkgiTDtXFTp07FNShoiC6BEFRHQrq0LlTdagOhVIgEZRbQZS2sxEhEbqzilGhgbszX/wz86/jOuucZub7//e/7733/UTMIwD1bwISXbJcTa2rblQf4WKDgKtBBEgA8MLv2Fr00CqgPlkVZXV2JVJGC9g4xYkPc4tqbTsaIXOtKHsznC78jdaqDNVPH2htRwvK7lUA+6vsRZ5Bkud9hqxcA3kwZKukeIFU4gJ/js1oDFbBWjY1I5V8BXAcHs8itWIC7txGQG4DaAhB5gGeQqLxO8r/2mDIDcBbj7K7lzPf/vhYSiOlmZjWPYBpOvkjAhiBpL7IIqb1Ur3SsfdFTFFdeWK2PwakRMc+HmIBErD7CPAQnfyooDcJDLtAb4IYrkja6vHBS/abJTWzvROQpyhXtiuWvimS6dgCcR8ADd10Ps1qGaLOh4xFO1qVytzWBMznQOMoi1/GAsDWjgwM9y1c2c3pwkQUMC6n+iBfjupe9nA6P7lgimkNAszRyV9SbalW64EFgMEayWQvA+xi0e7XpqiwerImuxMeh2BIHycL77VZdSYpMDLYMwhDDoR7FJZvZ7Ag034SIucgyW6WRh3ltjqsZvQCAulOE6yMgLzOYv6OxohOiga9C5FdcOwuX6Mw9It0U2kyrRzIdyzmT0S7qR29MFvWEAS/WbIHoosXOrEeQdBMx+7TmdXuL7kcfFZqXt3ZHIAndOyLQfYUreGKmNYVAIeRaOrScx57OURvl0BPawMEIxA5w1Lhvt9yOnsM5E0Q3Sza43HGLWK4BLR18x4YxiAMo9+ved5zeF4/p76+rpeCWMCanA1AeCu4beQ0i4WHy+W0LmDoahCRdVtX+Xg/Pv+Ki1I0VssCRkFr3+tN0X8fp1QnQ+vhlgAAAABJRU5ErkJggg==')
+  no-repeat center center;
+}
