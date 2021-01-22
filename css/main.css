@@ -103,11 +103,6 @@
   background-color: #fff;
 }
 
-#main .product .list {
-  /* margin-bottom: -1px; */
-  /* margin-right: -1px; */
-
-}
 #main .product .list li {
   float: left;
   width: 274px;
@@ -206,5 +201,36 @@
   margin-left: 5px;
   font-size: 14px;
   text-decoration: line-through;
+}
+
+#main .hot-sale {
+  background-color: #fff;
+  height: 218px;
+  margin: 20px auto 40px;
+}
+
+#main .hot-sale .title {
+  height: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  padding-left: 20px;
+  border: 1px solid #eaeaea;
+}
+
+#main .hot-sale ul {
+  border-bottom: 1px solid #eaeaea;
+}
+
+#main .hot-sale ul li {
+  float: left;
+  width: 219px;
+  height: 167px;
+  line-height: 167px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  text-align: center;
+  margin-left: -1px;
 }
 
